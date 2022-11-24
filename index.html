@@ -6,14 +6,16 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo__link">
-        <img class="logo">
+      <a class="logo__link" href="#">
+        <img class="logo" src="" alt="Логотип интернет-магазина Девайс">
       </a>
 
       <nav class="navigation">
       <form class="search__form">
-        <input class="search__field">
-        <button class="button search__button">Найти</button>
+        <input class="search__field" type="search" placeholder="Поиск по сайту">
+        <button class="button search__button" type="button">
+          Найти
+        </button>
       </form>
 
       <ul class="navigation__list__personal">
@@ -30,7 +32,7 @@
 
       <section class="catalog__section">
         <h2 class="catalog__section__title">Каталог товаров</h2>
-        <button class="button catalog__section__button">
+        <button class="button catalog__section__button" type="button">
           <span class="visually-hidden">Открыть</span>
         </button>
       </section>
@@ -50,7 +52,190 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Интернет-магазин техники Девайс</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Галерея товаров</h2>
+        <img class="slider__image" src="" alt="Пример товара.">
+        <button class="button slider__button slider__button__prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="button slider__button slider__button__next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
 
+        <ol class="slider__pagination">
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button slider__pagination__button__current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="product-description">
+        <h2 class="visually-hidden">Описание товаров</h2>
+        <p class="product-description__text__main">Порхает как бабочка,
+          жалит как пчела!</p>
+        <p class="product-description__text__minor">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.
+        </p>
+        <button class="button product-description__button" type="button">
+          Подробнее
+        </button>
+        <ul class="product-details__list">
+          <li class="product-details__item">
+            <span class="product-details__number">800 м</span>
+            <span class="product-details__text">Дальность полёта</span>
+          </li>
+          <li class="product-details__item">
+            <span class="product-details__number">50 м</span>
+            <span class="product-details__text">Радиус поражения</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="product-categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="product-categories__list">
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Очки для виртуально реальности.">
+            <span class="product-categories__title">Виртуальная реальность</span>
+          </li>
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Монопод для селфи.">
+            <span class="product-categories__title">Моноподы для селфи</span>
+          </li>
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Экшн-камера.">
+            <span class="product-categories__title">Экшн-камеры</span>
+          </li>
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Фитнес-браслет.">
+            <span class="product-categories__title">Фитнес-браслеты</span>
+          </li>
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Электронные часы.">
+            <span class="product-categories__title">Умные часы</span>
+          </li>
+          <li class="product-categories__item">
+            <img class="product-categories__image" src="" alt="Квадрокоптер.">
+            <span class="product-categories__title">Квадрокоптеры</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="extra-services">
+        <h2 class="visually-hidden">Дополнительные услуги</h2>
+        <ul class="extra-services__list">
+          <li class="extra-services__item">
+            <button class="button extra-services__button extra-services__button__current" type="button">
+              Доставка
+            </button>
+          </li>
+          <li class="extra-services__item">
+            <button class="button extra-services__button" type="button">
+              Гарантия
+            </button>
+          </li>
+          <li class="extra-services__item">
+            <button class="button extra-services__button" type="button">
+              Кредит
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="extra-services-description">
+        <h2 class="extra-services-description__title">Доставка</h2>
+        <img class="extra-services-description__image" src="" alt="Бегущий курьер.">
+        <p class="extra-services-description__text">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+
+      <section class="rare-product">
+        <h2 class="visually-hidden">Информация о доставке редких товаров</h2>
+        <img class="rare-product__image" src="" alt="Мчащийся грузовичок.">
+        <p class="rare-product__text">Доставим редкий товар под заказ</p>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title">О нас</h2>
+        <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.
+        </p>
+        <p class="about-us__text">Мы можем доставить ваш товар в самые отдалённые
+          уголки России транспортными компаниями:
+        </p>
+
+        <ul class="delivery__list">
+          <li class="delivery__item">
+            <a class="delivery__link">
+              Меловые линии
+            </a>
+          </li>
+          <li class="delivery__item">
+            <a class="delivery__link">
+              СДИК
+            </a>
+          </li>
+          <li class="delivery__item">
+            <a class="delivery__link">
+              ТоксБерри
+            </a>
+          </li>
+        </ul>
+
+        <a class="button about-us__button" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис.
+          Заодно сможете проверить работоспособность покупки.
+        </p>
+
+        <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
+        <a class="contacts__address" href="#">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </a>
+        <a class="contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+        <h3 class="contacts__subtitle">Время работы</h3>
+        <p class="contacts__text">пн—пт: с 10:00 до 22:00
+          сб—вс: с 10:00 до 19:00
+        </p>
+
+        <button class="button contacts__button" type="button">
+          Напишите нам
+        </button>
+      </section>
+
+      <section class="subsciption">
+        <h2 class="subsciption__title">Подпишитесь
+          на рассылку
+        </h2>
+        <p class="subsciption__text">
+          Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции,
+          спецпредложения и вот это вот всё.
+        </p>
+        <form class="subsciption__form">
+          <input class="subsciption__input" type="email" placeholder="Ваш e-mail">
+          <button class="button subsciption__button" type="button">Подписаться</button>
+        </form>
+        <span class="subsciption__free">Это бесплатно</span>
+      </section>
     </main>
 
     <footer class="footer">
@@ -61,18 +246,25 @@
       <section class="address">
         <h2 class="visually-hidden">Адресс магазина</h2>
         <span class="address__text">Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.</span>
+          реки Карповки, 5, литера П.
+        </span>
       </section>
 
       <ul class="navigation__list__about footer__list__about">
           <li class="navigation__item__about footer__item__about">
-            <a class="navigation__link__about footer__link__about" href="#">Доставка</a>
+            <a class="navigation__link__about footer__link__about" href="#">
+              Доставка
+            </a>
           </li>
           <li class="navigation__item__about footer__item__about">
-            <a class="navigation__link__about footer__link__about" href="#">Гарантия</a>
+            <a class="navigation__link__about footer__link__about" href="#">
+              Гарантия
+            </a>
           </li>
           <li class="navigation__item__about footer__item__about">
-            <a class="navigation__link__about footer__link__about" href="#">Контакты</a>
+            <a class="navigation__link__about footer__link__about" href="#">
+              Контакты
+            </a>
           </li>
        </ul>
 
@@ -112,8 +304,5 @@
         </a>
       </section>
     </footer>
-
-
-
   </body>
 </html>
