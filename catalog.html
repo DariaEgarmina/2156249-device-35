@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <h1 class="visually-hidden">
+        Каталог интернет-магазин техники Девайс
+      </h1>
+      <header class="inner-header">
+        <h2 class="inner-header__title">Моноподы для селфи</h2>
+        <ul class="catalog-navigation__list">
+          <li class="catalog-navigation__item">
+            <a class="catalog-navigation__link">Главная</a>
+          </li>
+          <li class="catalog-navigation__item">
+            <a class="catalog-navigation__link">Каталог товаров</a>
+          </li>
+          <li class="catalog-navigation__item">
+            <a class="catalog-navigation__link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="filter">
+        <h2 class="visually-hidden" hidden>
+          Фильтры для поиска в каталоге интернет-магазина Девайс
+        </h2>
+
+        <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter__group">
+            <legend class="filter__group">Стоимость</legend>
+            <input class="filter__input" type="range" min="0">
+          </fieldset>
+
+          <fieldset class="filter__group">
+            <legend class="filter__group">Цвет</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="black" checked>
+                  Чёрный
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="white" checked>
+                  Белый
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="blue">
+                  Синий
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="red">
+                  Красный
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__group">
+            <legend class="filter__group">Bluetooth</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="radio" name="Bluetooth" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="control">
+                  <input class="control__input" type="radio" name="Bluetooth" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <a class="button filter__button" href="#">Показать</a>
+        </form>
+      </section>
+
+      <section class="sorting">
+        <h2 class="sorting__title">Сортировка</h2>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Популярные</option>
+          <option value="cheap">Дешёвые</option>
+          <option value="expensive">Дорогие</option>
+        </select>
+
+        <button class="button sorting__button sorting__button__up" type="button">
+          <span class="visually-hidden">Вверх</span>
+        </button>
+        <button class="button sorting__button sorting__button__down" type="button">
+          <span class="visually-hidden">Вниз</span>
+        </button>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
