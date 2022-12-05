@@ -5,12 +5,58 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <a class="logo__link" href="#">
+        <img class="logo" src="" alt="Логотип интернет-магазина Девайс">
+      </a>
 
+      <nav class="navigation">
+      <form class="search__form">
+        <input class="search__field" type="search" placeholder="Текст поиска">
+        <button class="button search__button" type="button">
+          Найти
+        </button>
+      </form>
+
+      <ul class="navigation__list__personal">
+        <li class="navigation__item__personal">
+          <a class="navigation__link__personal" href="#">Коля Петухов</a>
+        </li>
+        <li class="navigation__item__personal">
+          <a class="navigation__link__personal" href="#">Выйти</a>
+        </li>
+        <li class="navigation__item__personal">
+          <a class="navigation__link__personal" href="#">Сравнить</a>
+        </li>
+        <li class="navigation__item__personal">
+          <a class="navigation__link__personal" href="#">Корзина</a>
+        </li>
+      </ul>
+
+      <section class="catalog__section">
+        <h2 class="catalog__section__title">Каталог товаров</h2>
+        <button class="button catalog__section__button" type="button">
+          <span class="visually-hidden">Открыть</span>
+        </button>
+      </section>
+
+      <ul class="navigation__list__about">
+        <li class="navigation__item__about">
+          <a class="navigation__link__about" href="#">Доставка</a>
+        </li>
+        <li class="navigation__item__about">
+          <a class="navigation__link__about" href="#">Гарантия</a>
+        </li>
+        <li class="navigation__item__about">
+          <a class="navigation__link__about" href="#">Контакты</a>
+        </li>
+      </ul>
+      </nav>
     </header>
+
     <main>
       <h1 class="visually-hidden">
-        Каталог интернет-магазин техники Девайс
+        Каталог интернет-магазина техники Девайс.
       </h1>
       <header class="inner-header">
         <h2 class="inner-header__title">Моноподы для селфи</h2>
@@ -28,7 +74,7 @@
       </header>
 
       <section class="filter">
-        <h2 class="visually-hidden" hidden>
+        <h2 class="visually-hidden">
           Фильтры для поиска в каталоге интернет-магазина Девайс
         </h2>
 
@@ -113,9 +159,159 @@
         </button>
       </section>
 
-    </main>
-    <footer>
+      <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
 
+        <ul class="search-results__list">
+          <li class="search-results__item">
+            <a class="search-results__link" href="#">
+              <img class="search-results__image" src="" width="" height="" alt="">
+            </a>
+            <a class="search-results__link" href="#">
+              <span class="search-results__name">Любительская
+                селфи-палка
+              </span>
+            </a>
+            <span class="search-results__price">
+              500  &#x20bd
+            </span>
+          </li>
+          <li class="search-results__item">
+            <a class="search-results__link" href="#">
+              <img class="search-results__image" src="" width="" height="" alt="">
+            </a>
+            <a class="search-results__link" href="#">
+              <span class="search-results__name">
+                Профессиональная селфи-палка
+              </span>
+            </a>
+            <span class="search-results__price">
+              1500  &#x20bd
+            </span>
+          </li>
+          <li class="search-results__item">
+            <a class="search-results__link" href="#">
+              <img class="search-results__image" src="" width="" height="" alt="">
+            </a>
+            <a class="search-results__link" href="#">
+              <span class="search-results__name">Непотопляемая
+                селфи-палка
+              </span>
+            </a>
+            <span class="search-results__price">
+              2500  &#x20bd
+            </span>
+          </li>
+          <li class="search-results__item">
+            <a class="search-results__link" href="#">
+              <img class="search-results__image" src="" width="" height="" alt="">
+            </a>
+            <a class="search-results__link" href="#">
+              <span class="search-results__name">
+                Селфи-палка «Следуй за мной»
+              </span>
+            </a>
+            <span class="search-results__price">
+              1500  &#x20bd
+            </span>
+          </li>
+        </ul>
+
+        <button class="button search-results__button" type="button">Загрузить ещё</button>
+      </section>
+
+      <section class="pagination">
+        <h2 class="visually-hidden">Кнопки нумирации страниц</h2>
+
+        <button class="button pagination__button" type="button">Назад</button>
+
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item__current">
+            <a class="pagination__link">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link">15</a>
+          </li>
+        </ul>
+
+        <button class="button pagination__button pagination__button__active" type="button">Вперёд</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo__link">
+        <img class="footer__logo">
+      </a>
+
+      <section class="address">
+        <h2 class="visually-hidden">Адресс магазина</h2>
+        <span class="address__text">Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
+        </span>
+      </section>
+
+      <ul class="navigation__list__about footer__list__about">
+          <li class="navigation__item__about footer__item__about">
+            <a class="navigation__link__about footer__link__about" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="navigation__item__about footer__item__about">
+            <a class="navigation__link__about footer__link__about" href="#">
+              Гарантия
+            </a>
+          </li>
+          <li class="navigation__item__about footer__item__about">
+            <a class="navigation__link__about footer__link__about" href="#">
+              Контакты
+            </a>
+          </li>
+       </ul>
+
+      <section class="phone">
+        <h2 class="visually-hidden">Телефон магазина</h2>
+        <span class="phone__text">Тел.:</span>
+        <a class="phone__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="copyright">
+        <h2 class="visually-hidden">Разработчик сайта</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">
+            Логотип компании HtmlAcademy
+          </span>
+        </a>
+      </section>
     </footer>
 
   </body>
