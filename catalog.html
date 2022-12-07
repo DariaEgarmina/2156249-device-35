@@ -24,7 +24,7 @@
           <a class="navigation__link__personal" href="#">Коля Петухов</a>
         </li>
         <li class="navigation__item__personal">
-          <a class="navigation__link__personal" href="#">Выйти</a>
+          <a class="navigation__link__personal navigation__link__personal__inactive" href="#">Выйти</a>
         </li>
         <li class="navigation__item__personal">
           <a class="navigation__link__personal" href="#">Сравнить</a>
@@ -35,7 +35,11 @@
       </ul>
 
       <section class="catalog-section">
-        <h2 class="catalog-section__title">Каталог товаров</h2>
+        <h2 class="catalog-section__title">
+          <a class="catalog-section__link" href="catalog.html">
+          Каталог товаров
+          </a>
+        </h2>
         <button class="button catalog-section__button" type="button">
           <span class="visually-hidden">Открыть</span>
         </button>
@@ -77,18 +81,19 @@
       </header>
 
       <section class="filter">
-        <h2 class="visually-hidden">
-          Фильтры для поиска в каталоге интернет-магазина Девайс
+        <h2 class="filter__title">
+          Фильтр:
         </h2>
 
         <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter__group">
-            <legend class="filter__title">Стоимость</legend>
+            <legend class="filter__group__title">Стоимость</legend>
             <input class="filter__input" type="range" min="0">
           </fieldset>
 
           <fieldset class="filter__group">
-            <legend class="filter__title">Цвет</legend>
+            <legend class="filter__group__title">Цвет</legend>
+
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="control">
@@ -124,7 +129,8 @@
           </fieldset>
 
           <fieldset class="filter__group">
-            <legend class="filter__title">Bluetooth</legend>
+            <legend class="filter__group__title">Bluetooth</legend>
+
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="control">
@@ -149,9 +155,9 @@
         <h2 class="sorting__title">Сортировка</h2>
 
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Популярные</option>
-          <option value="cheap">Дешёвые</option>
-          <option value="expensive">Дорогие</option>
+          <option class="select-control__option" value="popular">Популярные</option>
+          <option class="select-control__option" value="cheap">Дешёвые</option>
+          <option class="select-control__option" value="expensive">Дорогие</option>
         </select>
 
         <button class="button sorting__button sorting__button__up" type="button">
@@ -171,9 +177,7 @@
               <img class="search-results__image" src="images/catalog/selfie-fan-img__catalog.png" width="360px" height="380px" alt="Любительская селфи-палка.">
             </a>
             <a class="search-results__link" href="#">
-              <span class="search-results__name">Любительская
-                селфи-палка
-              </span>
+              Любительская селфи-палка
             </a>
             <span class="search-results__price">
               500  &#x20bd
@@ -184,9 +188,7 @@
               <img class="search-results__image" src="images/catalog/selfie-pro-img__catalog.png" width="360px" height="380px" alt="Профессиональная селфи-палка.">
             </a>
             <a class="search-results__link" href="#">
-              <span class="search-results__name">
                 Профессиональная селфи-палка
-              </span>
             </a>
             <span class="search-results__price">
               1500  &#x20bd
@@ -197,9 +199,7 @@
               <img class="search-results__image" src="images/catalog/selfie-water-prof-img__catalog.png" width="360px" height="380px" alt="Непотопляемая селфи-палка.">
             </a>
             <a class="search-results__link" href="#">
-              <span class="search-results__name">Непотопляемая
-                селфи-палка
-              </span>
+              Непотопляемая селфи-палка
             </a>
             <span class="search-results__price">
               2500  &#x20bd
@@ -210,9 +210,7 @@
               <img class="search-results__image" src="images/catalog/selfie-follow-me-img__catalog.png" width="360px" height="380px" alt="Селфи-палка «Следуй за мной» в виде мужской руки.">
             </a>
             <a class="search-results__link" href="#">
-              <span class="search-results__name">
                 Селфи-палка «Следуй за мной»
-              </span>
             </a>
             <span class="search-results__price">
               1500  &#x20bd
@@ -282,8 +280,7 @@
 
       <section class="phone">
         <h2 class="visually-hidden">Телефон магазина</h2>
-        <span class="phone__text">Тел.:</span>
-        <a class="phone__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="phone__link" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
       </section>
 
       <section class="social">
