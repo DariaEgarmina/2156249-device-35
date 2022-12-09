@@ -24,6 +24,10 @@
 
 /* Общее */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Rubic", sans-serif;
   font-size: 18px;
@@ -31,6 +35,11 @@ body {
 
   background-color: #ffffff;
   color: #444444;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -46,6 +55,54 @@ body {
 
 /* Главная страница */
 
+/* Шапка */
+
+.header {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation__personal {
+  width: 1040px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.search__form {
+  width: 517px;
+}
+
+.navigation__list__personal {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  width: 496px;
+}
+
+.navigation__about {
+  width: 1040px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.catalog-section {
+  padding: 0;
+  margin: 0;
+  margin-right: 276px;
+  width: 293px;
+}
+
+.navigation__list__about {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  width: 496px;
+}
+
 .navigation__link__personal {
   text-decoration: none;
   color: black;
@@ -60,6 +117,18 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+/* Основная часть */
+
+.main-container {
+  flex-grow: 1;
+
+  width: 1164px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .product-description__text__main {
