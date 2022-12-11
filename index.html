@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="header">
       <a class="logo__link" href="index.html">
         <img class="logo" src="images/header/logo__header.svg" width="145px" height="36px" alt="Логотип интернет-магазина Девайс.">
@@ -58,7 +59,7 @@
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="main__container">
       <h1 class="visually-hidden">Интернет-магазин техники Девайс</h1>
 
       <div class="slider__product-description__container">
@@ -148,6 +149,7 @@
         </ul>
       </section>
 
+      <div class="extra-services__container">
       <section class="extra-services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
 
@@ -178,13 +180,18 @@
           мы неплохо заработаем, поднимая его на ваш этаж.
         </p>
       </section>
+      </div>
 
       <section class="rare-product">
         <h2 class="visually-hidden">Информация о доставке редких товаров</h2>
         <img class="rare-product__image" src="images/index__main/truck-icon__main.svg" width="47px" height="31px" alt="Мчащийся грузовичок.">
         <p class="rare-product__text">Доставим редкий товар под заказ</p>
+        <button class="button rare-product__button" type="button">
+          <span class="visually-hidden">Информация</span>
+        </button>
       </section>
 
+      <div class="about-us__contacts__container ">
       <section class="about-us">
         <h2 class="about-us__title">О нас</h2>
         <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика,
@@ -237,6 +244,7 @@
           Напишите нам
         </button>
       </section>
+      </div>
 
       <section class="subsciption">
         <h2 class="subsciption__title">Подпишитесь
@@ -262,6 +270,7 @@
         <img class="footer__logo" src="images/footer/logo__footer.svg" width="145px" height="36px" alt="Логотип интернет-магазина Девайс.">
       </a>
 
+      <div class="footer__address__container">
       <section class="address">
         <h2 class="visually-hidden">Адресс магазина</h2>
         <span class="address__text">Санкт-Петербург, набережная
@@ -291,7 +300,9 @@
         <h2 class="visually-hidden">Телефон магазина</h2>
         <a class="phone__link" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
       </section>
+      </div>
 
+      <div class="footer__social__copyright__container">
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
@@ -321,6 +332,8 @@
           </span>
         </a>
       </section>
+      </div>
     </footer>
+    </div>
   </body>
 </html>
