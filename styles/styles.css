@@ -37,15 +37,11 @@ body {
   color: #444444;
 
   margin: 0;
-}
-
-.container {
-  margin: 0 auto;
   padding-top: 20px;
-  width: 1160px;
+  min-height: 100%;
+
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
 .visually-hidden {
@@ -64,13 +60,16 @@ body {
 /* Шапка */
 
 .header {
-  width: 1040px;
+  width: 1160px;
   margin: 0 auto;
+  padding: 0 60px;
+  background-color: #FFE17F;
 }
 
 .logo {
   margin-bottom: 30px;
 }
+/* Навигация с личными данными - шапка */
 
 .navigation__personal {
   margin: 0;
@@ -97,6 +96,8 @@ body {
 
   display: flex;
 }
+
+/* Навигация с информацией об интернет-магазине - шапка */
 
 .navigation__about {
   margin: 0;
@@ -149,11 +150,27 @@ body {
   margin: 0;
 }
 
+/* Слайдер и описание товара - основная часть */
+
 .slider__product-description__container {
   display: flex;
 
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto 70px auto;
 }
+
+/* Слайдер */
+
+.slider__pagination {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+}
+
+/* Описание товара */
 
 .product-description__text__main {
   font-family: "Raleway", sans-serif;
@@ -173,8 +190,11 @@ body {
   line-height: 30px;
 }
 
+/* Категории товаров на сайте - основная часть */
+
 .product-categories {
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto 70px auto;
 }
 
 .product-categories__list {
@@ -202,11 +222,16 @@ body {
   color: black;
 }
 
+/* Дополнительные услуги с описанием - основная часть */
+
 .extra-services__container {
   display: flex;
 
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto 70px auto;
 }
+
+/* Список дополнительных услуг */
 
 .extra-services {
   padding: 64px 0 65px 0;
@@ -219,6 +244,8 @@ body {
   margin: 0;
 }
 
+/* Описание дополнительных услуг */
+
 .extra-services-description {
   padding: 73px 63px 73px 116px;
 }
@@ -230,9 +257,13 @@ body {
   color: black;
 }
 
+/* Доставка редких товаров - основная часть */
+
 .rare-product {
-  margin-bottom: 70px;
   display: flex;
+
+  width: 1160px;
+  margin: 0 auto 70px auto;
 }
 
 .rare-product__text {
@@ -245,11 +276,16 @@ body {
   color: black;
 }
 
+/* Информация о компании и контакты - основная часть */
+
 .about-us__contacts__container {
   display: flex;
 
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto 70px auto;
 }
+
+/* Информация о компании */
 
 .about-us__title,
 .contacts__title {
@@ -268,6 +304,8 @@ body {
   color: black;
 }
 
+/* Контакты */
+
 .contacts__subtitle {
   font-weight: 700;
   font-size: 24px;
@@ -283,6 +321,13 @@ body {
   color: #444444;
 }
 
+/* Подписка на рассылку - основная часть */
+
+.subsciption {
+  width: 1160px;
+  margin: 0 auto 0 auto;
+}
+
 .subsciption__title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -290,9 +335,17 @@ body {
   color: black;
 }
 
-.footer {
+/* Подвал сайта */
+
+.footer__background {
   background-color: #444444;
   color: #ffffff;
+
+}
+
+.footer__container {
+  width: 1160px;
+  margin: 0 auto;
   padding-top: 62px;
   padding-bottom: 62px;
 }
