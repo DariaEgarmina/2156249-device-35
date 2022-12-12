@@ -385,11 +385,28 @@ body {
   /* переделать цвет на черный с прозрачностью 0.3 */
 }
 
+/* Внутренняя шапка - каталог */
+
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
 .inner-header__title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: black;
+}
+
+.catalog-navigation__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
 }
 
 .catalog-navigation__link {
@@ -399,6 +416,16 @@ body {
   color: black;
 }
 
+/* Контейнер для секций "Фильтр", "Сортировка", "Результаты поиска" и "Пагинация" - каталог */
+
+.filter__sorting__search-results__pagination__container {
+  width: 1160px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+/* Фильтр - каталог */
 
 .filter__title {
   font-family: 'Raleway';
@@ -423,6 +450,15 @@ body {
   color: #000000;
 }
 
+/* Контейнер для секций "Сортировка", "Результаты поиска" и "Пагинация" - каталог */
+
+.sorting__search-results__pagination__container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Сортировка - каталог */
+
 .sorting__title {
   font-family: 'Raleway';
   font-size: 16px;
@@ -430,6 +466,20 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+/* Результаты поиска - каталог */
+
+.search-results__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.search-results__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-results__link {
@@ -445,6 +495,21 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+}
+
+/* Пагинация */
+
+.pagination {
+  display: flex;
+}
+
+.pagination__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
 }
 
 .pagination__link {
