@@ -690,7 +690,7 @@ background-color: transparent;
 
 .inner-header {
   width: 1160px;
-  margin: 0 auto;
+  margin: 35px auto;
   padding-left: 60px;
 }
 
@@ -699,6 +699,9 @@ background-color: transparent;
   font-size: 50px;
   line-height: 50px;
   color: black;
+
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .catalog-navigation__list {
@@ -708,6 +711,21 @@ background-color: transparent;
   margin: 0;
 
   display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-navigation__item {
+  margin: 0;
+  margin-right: 36px;
+
+  display: block;
+  height: 20px;
+
+  /* Какие ещё варианты сделать лишку такой же высоты, что и текст?!!!!! */
+}
+
+.catalog-navigation__item:last-child {
+  margin-right: 0;
 }
 
 .catalog-navigation__link {
@@ -722,11 +740,20 @@ background-color: transparent;
 .filter__sorting__search-results__pagination__container {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
+  padding-left: 60px;
 
   display: flex;
 }
 
 /* Фильтр - каталог */
+
+.filter {
+  width: 260px;
+  padding-right: 60px;
+
+  background-color: #F0F0F0;
+}
 
 .filter__title {
   font-family: 'Raleway';
@@ -735,6 +762,8 @@ background-color: transparent;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+
+  margin: 25px 0 60px;
 }
 
 .filter__group__title {
@@ -760,6 +789,14 @@ background-color: transparent;
 
 /* Сортировка - каталог */
 
+.sorting {
+  display: flex;
+
+  padding: 25px 40px;
+
+  background-color: #F0F0F0;
+}
+
 .sorting__title {
   font-family: 'Raleway';
   font-size: 16px;
@@ -767,6 +804,15 @@ background-color: transparent;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+
+  margin: 0;
+}
+
+.select-control {
+  width: 140px;
+  margin: 0 auto;
+
+  border: none;
 }
 
 /* Результаты поиска - каталог */
@@ -776,6 +822,12 @@ background-color: transparent;
 
   padding: 0;
   margin: 0;
+
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 44px;
+
+  padding: 70px 40px 44px;
 }
 
 .search-results__item {
