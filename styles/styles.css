@@ -207,7 +207,6 @@ body {
 .product-description {
   width: 560px;
   margin: 0;
-  margin-left: 40px;
 }
 
 .product-description__order-number {
@@ -254,7 +253,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  width: 140px;
   margin-right: 20px;
 }
 
@@ -266,6 +264,7 @@ body {
   font-size: 36px;
   line-height: 30px;
   color: black;
+  margin-bottom: 12px;
 }
 
 .product-details__text {
@@ -297,6 +296,23 @@ body {
   width: 160px;
 }
 
+.product-categories__image__wrap {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  color: #444444;
+
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monopod__image {
+  align-self: end;
+}
+
 .product-categories__title {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -317,6 +333,7 @@ body {
 /* Список дополнительных услуг */
 
 .extra-services {
+  width: 280px;
   padding: 64px 0 65px 0;
 }
 
@@ -330,7 +347,9 @@ body {
 /* Описание дополнительных услуг */
 
 .extra-services-description {
+  width: 873px;
   padding: 73px 63px 73px 116px;
+  box-sizing: border-box;
 }
 
 .extra-services-description__title {
@@ -338,6 +357,14 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: black;
+
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.extra-services-description__text {
+  margin: 0;
+  max-width: 452px;
 }
 
 /* Доставка редких товаров - основная часть */
@@ -349,6 +376,18 @@ body {
   margin: 0 auto 70px auto;
 }
 
+.rare-product__image__wrap {
+  width: 125px;
+  height: 100px;
+
+  background-color: #FFE17F;
+  color: #444444;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .rare-product__text {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -357,6 +396,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: black;
+
+  margin: auto;
+}
+
+.rare-product__button {
+  width: 125px;
+  height: 100px;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 /* Информация о компании и контакты - основная часть */
@@ -376,6 +426,29 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: black;
+
+  margin: 48px 0;
+}
+
+.about-us__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.delivery__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.delivery__item {
+  margin-bottom: 19px;
+}
+
+.delivery__item:last-child {
+  margin-bottom: 0;
 }
 
 .delivery__link {
@@ -389,10 +462,18 @@ body {
 
 /* Контакты */
 
+.contacts__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .contacts__subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts__address {
@@ -402,13 +483,23 @@ body {
 
 .contacts__phone {
   color: #444444;
+
+  display: block;
+  margin-bottom: 30px;
 }
 
 /* Подписка на рассылку - основная часть */
 
+.subsciption__background {
+  background-color: #F0F0F0;
+}
+
 .subsciption {
   width: 1160px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .subsciption__title {
@@ -416,6 +507,32 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: black;
+
+  width: 348px;
+  margin: 64px 0 144px 0;
+}
+
+.subsciption__text {
+  width: 560px;
+  margin: 74px 0 144px 252px;
+}
+
+.subsciption__form {
+  margin-bottom: 56px;
+}
+
+.subsciption__input {
+  width: 557px;
+  height: 55px;
+}
+
+.subsciption__button {
+  width: 253px;
+  height: 55px;
+}
+
+.subsciption__free {
+  margin-left: auto;
 }
 
 /* Подвал сайта */
@@ -433,8 +550,17 @@ body {
   padding-bottom: 62px;
 }
 
+.footer__logo {
+  margin-bottom: 30px;
+}
+
 .footer__address__container {
   display: flex;
+}
+
+.address {
+  width: 246px;
+  margin-bottom: 62px;
 }
 
 .address__text {
@@ -444,6 +570,10 @@ body {
 
 .footer__link__about {
   color: #ffffff;
+}
+
+.phone {
+  margin-left: 183px;
 }
 
 .phone__link {
