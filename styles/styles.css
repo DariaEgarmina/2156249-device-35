@@ -55,6 +55,22 @@ body {
   overflow: hidden;
 }
 
+/* Кнопки */
+
+.button {
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #000000;
+
+border: none;
+background-color: transparent;
+}
+
+
 /* Главная страница */
 
 /* Шапка */
@@ -80,16 +96,46 @@ body {
 
 /* Форма поиска */
 
+.search__form {
+  display: flex;
+}
+
 .search__field {
   width: 359px;
   height: 40px;
   margin: 0;
-  border: 0;
+  padding: 0 0 0 48px;
+
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+
+  background-color: transparent;
+}
+
+.search__field::placeholder{
+  font-size: 16px;
+  line-height: 20px;
+
+  /* color: rgba(255, 255, 255, 0.3); */
+  color: #444444;
 }
 
 .search__button {
   width: 160px;
   height: 40px;
+  padding: 10px;
+  /* box-sizing: border-box; */
+
+
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
 /* Навигация */
@@ -124,7 +170,7 @@ body {
   margin: 0;
 
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .catalog-section {
@@ -132,6 +178,7 @@ body {
   margin: 0;
 
   display: flex;
+  align-items: center;
 }
 
 .catalog-section__title {
@@ -142,7 +189,15 @@ body {
 .catalog-section__button {
   width: 50px;
   height: 50px;
+
+  margin: 0;
+  padding: 0;
+
   border-radius: 50%;
+  /* border: 2px solid rgba(255, 255, 255, 0.3); */
+  border: 2px solid #444444;
+
+  background-color: transparent;
 }
 
 .navigation__list__about {
@@ -344,6 +399,15 @@ body {
   margin: 0;
 }
 
+.extra-services__item {
+  margin-bottom: 35px;
+}
+
+.extra-services__item:last-child {
+  margin-bottom: 0;
+}
+
+
 /* Описание дополнительных услуг */
 
 .extra-services-description {
@@ -519,20 +583,44 @@ body {
 
 .subsciption__form {
   margin-bottom: 56px;
+
+  display: flex;
 }
 
 .subsciption__input {
   width: 557px;
   height: 55px;
+
+  margin: 0;
+  padding: 0 0 0 16px;
+
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #C4C4C4;
+
+  background-color: transparent;
+}
+
+.subsciption__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #444444;
+  opacity: 0.5;
 }
 
 .subsciption__button {
   width: 253px;
-  height: 55px;
+  height: 58px;
+  padding: 18px 39px;
+
+  border: 3px solid #C4C4C4;
 }
 
 .subsciption__free {
   margin-left: auto;
+  margin-top: 13px;
 }
 
 /* Подвал сайта */
