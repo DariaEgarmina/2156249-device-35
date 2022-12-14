@@ -80,6 +80,8 @@ background-color: transparent;
   margin: 0 auto;
   padding: 0 60px;
   background-color: #FFE17F;
+
+  box-sizing: border-box;
 }
 
 .logo {
@@ -681,6 +683,16 @@ background-color: transparent;
 
 /* Страница каталога */
 
+/* Шапка - каталог */
+
+.login__item__header {
+  margin-right: 28px;
+}
+
+.logout__item__header {
+  margin-right: 27px;
+}
+
 .navigation__link__personal__inactive {
   color:  #444444;
   /* переделать цвет на черный с прозрачностью 0.3 */
@@ -692,6 +704,8 @@ background-color: transparent;
   width: 1160px;
   margin: 35px auto;
   padding-left: 60px;
+
+  box-sizing: border-box;
 }
 
 .inner-header__title {
@@ -735,24 +749,31 @@ background-color: transparent;
   color: black;
 }
 
+/* Контейнер для фона каталога */
+
+.catalog__background {
+  background-color: #F0F0F0;
+  color: #444444;
+}
+
 /* Контейнер для секций "Фильтр", "Сортировка", "Результаты поиска" и "Пагинация" - каталог */
 
 .filter__sorting__search-results__pagination__container {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 60px;
 
   display: flex;
+  justify-content: right;
 }
 
 /* Фильтр - каталог */
 
 .filter {
   width: 260px;
-  padding-right: 60px;
 
   background-color: #F0F0F0;
+  color: #444444;
 }
 
 .filter__title {
@@ -825,24 +846,36 @@ background-color: transparent;
 
   display: grid;
   grid-template-columns: 360px 360px;
-  gap: 44px;
+  gap: 40px;
 
   padding: 70px 40px 44px;
+
+  background-color: #ffffff;
 }
 
 .search-results__item {
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
 }
 
-.search-results__link {
+.search-results__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.search-results__link__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   text-decoration: none;
   color: #000000;
+
+  max-width: 233px;
 }
+
 
 .search-results__price {
   font-size: 18px;
@@ -850,10 +883,23 @@ background-color: transparent;
   text-align: right;
 }
 
+.search-results__button {
+  width: 760px;
+  height: 55px;
+
+  margin: 0 40px 44px;
+}
+
 /* Пагинация */
 
 .pagination {
   display: flex;
+  justify-content: space-between;
+
+  width: 760px;
+  height: 71px;
+
+  margin: 0 40px 78px;
 }
 
 .pagination__list {
@@ -863,6 +909,12 @@ background-color: transparent;
   margin: 0;
 
   display: flex;
+  align-items: center;
+}
+
+.pagination__item {
+  width: 40px;
+  height: 40px;
 }
 
 .pagination__link {
@@ -872,4 +924,12 @@ background-color: transparent;
   text-decoration: none;
   color: #444444;
   opacity: 0.6;
+
+  width: 40px;
+  height: 40px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

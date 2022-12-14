@@ -20,13 +20,13 @@
       </form>
 
       <ul class="navigation__list__personal">
-        <li class="navigation__item__personal">
+        <li class="navigation__item__personal login__item__header">
           <a class="navigation__link__personal" href="#">Коля Петухов</a>
         </li>
-        <li class="navigation__item__personal">
+        <li class="navigation__item__personal logout__item__header">
           <a class="navigation__link__personal navigation__link__personal__inactive" href="#">Выйти</a>
         </li>
-        <li class="navigation__item__personal">
+        <li class="navigation__item__personal compare__item">
           <a class="navigation__link__personal" href="#">Сравнить</a>
         </li>
         <li class="navigation__item__personal">
@@ -82,7 +82,8 @@
         </ul>
       </header>
 
-      <div class="filter__sorting__search-results__pagination__container">
+      <div class="catalog__background">
+        <div class="filter__sorting__search-results__pagination__container">
       <section class="filter">
         <h2 class="filter__title">
           Фильтр:
@@ -181,8 +182,8 @@
               <img class="search-results__image" src="images/catalog/selfie-fan-img__catalog.png" width="360px" height="380px" alt="Любительская селфи-палка.">
             </a>
             <div class="search-results__wrapper">
-            <a class="search-results__link" href="#">
-              Любительская селфи-палка
+            <a class="search-results__link__title" href="#">
+              Любительская <br> селфи-палка
             </a>
             <span class="search-results__price">
               500  &#x20bd
@@ -194,7 +195,7 @@
               <img class="search-results__image" src="images/catalog/selfie-pro-img__catalog.png" width="360px" height="380px" alt="Профессиональная селфи-палка.">
             </a>
             <div class="search-results__wrapper">
-            <a class="search-results__link" href="#">
+            <a class="search-results__link__title" href="#">
                 Профессиональная селфи-палка
             </a>
             <span class="search-results__price">
@@ -207,8 +208,8 @@
               <img class="search-results__image" src="images/catalog/selfie-water-prof-img__catalog.png" width="360px" height="380px" alt="Непотопляемая селфи-палка.">
             </a>
             <div class="search-results__wrapper">
-            <a class="search-results__link" href="#">
-              Непотопляемая селфи-палка
+            <a class="search-results__link__title" href="#">
+              Непотопляемая <br> селфи-палка
             </a>
             <span class="search-results__price">
               2500  &#x20bd
@@ -220,7 +221,7 @@
               <img class="search-results__image" src="images/catalog/selfie-follow-me-img__catalog.png" width="360px" height="380px" alt="Селфи-палка «Следуй за мной» в виде мужской руки.">
             </a>
             <div class="search-results__wrapper">
-            <a class="search-results__link" href="#">
+            <a class="search-results__link__title" href="#">
                 Селфи-палка «Следуй за мной»
             </a>
             <span class="search-results__price">
@@ -240,25 +241,26 @@
 
         <ul class="pagination__list">
           <li class="pagination__item pagination__item__current">
-            <a class="pagination__link">1</a>
+            <a class="pagination__link" href="#">1</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link">2</a>
+            <a class="pagination__link" href="#">2</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link">3</a>
+            <a class="pagination__link" href="#">3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link">...</a>
+            <a class="pagination__link" href="#">...</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link">15</a>
+            <a class="pagination__link" href="#">15</a>
           </li>
         </ul>
 
         <button class="button pagination__button pagination__button__active" type="button">Вперёд</button>
       </section>
       </div>
+        </div>
       </div>
     </main>
 
