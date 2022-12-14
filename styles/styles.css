@@ -1025,6 +1025,12 @@ background-color: transparent;
   appearance: none;
 }
 
+/* Контейнер для фона результатов поиска и пагинации - каталог */
+
+.search-results__pagination__background {
+  background-color: #ffffff;
+}
+
 /* Результаты поиска - каталог */
 
 .search-results__list {
@@ -1077,6 +1083,9 @@ background-color: transparent;
   height: 55px;
 
   margin: 0 40px 44px;
+  padding: 0;
+
+  border: 3px solid #E5E5E5;
 }
 
 /* Пагинация */
