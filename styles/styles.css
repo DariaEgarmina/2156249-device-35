@@ -1012,7 +1012,17 @@ background-color: transparent;
   width: 140px;
   margin: 0 auto;
 
+  padding-right: 32px;
+
+  font: inherit;
+
+  background-color: transparent;
   border: none;
+
+  /* background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center; */
+  appearance: none;
 }
 
 /* Результаты поиска - каталог */
