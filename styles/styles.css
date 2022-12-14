@@ -787,18 +787,197 @@ background-color: transparent;
   margin: 25px 0 60px;
 }
 
+.filter__form {
+  width: 200px;
+}
+
+.filter__group {
+  width: 200px;
+  box-sizing: border-box;
+
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+}
+
 .filter__group__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+
+  margin-bottom: 20px;
+}
+
+/* Рейнджер */
+
+.range {
+  /* width: 200px; */
+  /* как сделать, чтобы он был на всю длинну фильдсета??? */
+}
+
+.range__scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #DCDCDC;
+
+  width: 200px;
+}
+
+.range__bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  border: 2px solid #444444;
+  /* border: 2px solid rgba(255, 255, 255, 0.3); */
+}
+
+.range__toggle:active {
+  background-color: #000000;
+}
+
+.range__toggle:focus {
+  /* ?????? */
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range__inputs {
+  display: flex;
+  justify-content: left;
+  column-gap: 50px;
+}
+
+.range__label {
+  display: flex;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.range__input {
+  width: 30px;
+  padding: 0 2px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Оформление чек-боксов */
+
+.filter__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .control {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.control:hover .control__mark {
+  border-color: #444444;
+  /* Более внимательно изучить и прописать состояния */
+}
+
+.control__input:disabled + .control__mark {
+  border-color: #CCCCCC;
+  /* Более внимательно изучить и прописать состояния */
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before,
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  transform: rotate(45deg);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  transform: rotate(-45deg);
+}
+
+/* Радио-кнопки */
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Контейнер для секций "Сортировка", "Результаты поиска" и "Пагинация" - каталог */
