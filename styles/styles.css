@@ -153,17 +153,45 @@ background-color: transparent;
   align-items: center;
 }
 
+.navigation__link__personal {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation__link__personal__compare {
+  padding-left: 22px;
+}
+
+.navigation__link__personal:hover {
+  color:#666666;
+}
+
+.navigation__link__personal:active {
+  color:#b3b3b3;
+}
+
+.navigation__link__personal:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.navigation__item__personal:hover .navigation__icon {
+  fill: #666666;
+}
+
+.navigation__item__personal:active .navigation__icon {
+  fill:#b3b3b3;
+}
+
 .login__item {
   margin-right: 176px;
 }
 
 .compare__item {
-  margin-right: 36px;
+  margin-right: 30px;
 }
 
-.navigation__link__personal {
-  text-decoration: none;
-  color: black;
+.navigation__link__personal__basket {
+  padding-left: 20px;
 }
 
 /* Навигация с информацией об интернет-магазине - шапка */
@@ -686,7 +714,13 @@ background-color: transparent;
 /* Шапка - каталог */
 
 .login__item__header {
-  margin-right: 28px;
+  /* margin-right: 28px; */
+}
+
+
+.navigation__link__personal__catalog {
+  padding-left: 10px;
+
 }
 
 .logout__item__header {
@@ -695,6 +729,7 @@ background-color: transparent;
 
 .navigation__link__personal__inactive {
   color:  #444444;
+  padding-left: 15px;
   /* переделать цвет на черный с прозрачностью 0.3 */
 }
 
