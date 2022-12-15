@@ -730,12 +730,10 @@ background-color: transparent;
 
 .catalog-navigation__item {
   margin: 0;
-  margin-right: 36px;
-
-  display: block;
   height: 20px;
 
   /* Какие ещё варианты сделать лишку такой же высоты, что и текст?!!!!! */
+  /* Почему item выше, чем лишка???? */
 }
 
 .catalog-navigation__item:last-child {
@@ -747,6 +745,30 @@ background-color: transparent;
   line-height: 20px;
   text-decoration: none;
   color: black;
+
+  padding-right: 36px;
+
+  position: relative;
+}
+
+.catalog-navigation__link:hover {
+  color: #666666;
+}
+
+.catalog-navigation__link:active {
+  color: #b3b3b3;
+}
+
+.catalog-navigation__link:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.catalog-navigation__icon__link::after {
+  position: absolute;
+
+  content: url(../images/catalog/breadcrumbs-arrow-icon__catalog.svg);
+  top: 0;
+  right: 16px;
 }
 
 /* Контейнер для фона каталога */
@@ -1009,7 +1031,7 @@ background-color: transparent;
 }
 
 .select-control {
-  width: 140px;
+  width: 145px;
   margin: 0 auto;
 
   padding-right: 32px;
@@ -1019,11 +1041,34 @@ background-color: transparent;
   background-color: transparent;
   border: none;
 
-  /* background-image: url("../images/select-arrow.svg");
+  background-image: url(../images/catalog/select-arrow__catalog.svg);
   background-repeat: no-repeat;
-  background-position: right 16px center; */
+  background-position: right 12px center;
+
   appearance: none;
 }
+
+.sorting__button {
+  width: 30px;
+  height: 30px;
+}
+
+.sorting__button:hover .sorting__icon {
+  fill: #808080;
+}
+
+.sorting__button:active .sorting__icon {
+  fill: #000000;
+}
+
+.sorting__button:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.sorting__button:focus .sorting__icon {
+  fill: #CCCCCC;
+}
+
 
 /* Контейнер для фона результатов поиска и пагинации - каталог */
 
@@ -1088,6 +1133,26 @@ background-color: transparent;
   border: 3px solid #E5E5E5;
 }
 
+.search-results__button:hover {
+  border: 3px solid #000000;
+}
+
+.search-results__button:active {
+  color: #b3b3b3;
+  border: 3px solid #b3b3b3;
+}
+
+.search-results__button:focus {
+  border: 3px solid #e5e5e5;
+  outline: 2px solid #AF4FFF;
+  /* Подумать, как ещё это всё можно сделать */
+}
+
+.search-results__button:disabled {
+  color: #b3b3b3;
+  border: 3px solid #E5E5E5;
+}
+
 /* Пагинация */
 
 .pagination {
@@ -1098,6 +1163,32 @@ background-color: transparent;
   height: 71px;
 
   margin: 0 40px 78px;
+
+  background-color: #EBEBEB;
+}
+
+.pagination__button {
+  width: 128px;
+  height: 71px;
+}
+
+.pagination__button:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination__button:active {
+  color: #9a9a9a;
+  background-color: #DCDCDC;
+}
+
+.pagination__button:focus {
+  background-color: #f0f0f0;
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination__button:disabled {
+  color: #b9b9b9;
+  background-color: #EBEBEB;
 }
 
 .pagination__list {

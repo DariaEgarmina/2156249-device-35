@@ -71,10 +71,10 @@
 
         <ul class="catalog-navigation__list">
           <li class="catalog-navigation__item">
-            <a class="catalog-navigation__link" href="index.html">Главная</a>
+            <a class="catalog-navigation__link catalog-navigation__icon__link" href="index.html">Главная</a>
           </li>
           <li class="catalog-navigation__item">
-            <a class="catalog-navigation__link" href="#">Каталог товаров</a>
+            <a class="catalog-navigation__link catalog-navigation__icon__link" href="#">Каталог товаров</a>
           </li>
           <li class="catalog-navigation__item">
             <a class="catalog-navigation__link" href="#">Моноподы для селфи</a>
@@ -185,23 +185,30 @@
 
           <div class="sorting__search-results__pagination__container">
             <section class="sorting">
-        <h2 class="sorting__title">Сортировка</h2>
+             <h2 class="sorting__title">Сортировка</h2>
 
-        <select class="select-control" aria-label="Сортировка">
-          <option class="select-control__option" value="popular">Популярные</option>
-          <option class="select-control__option" value="cheap">Дешёвые</option>
-          <option class="select-control__option" value="expensive">Дорогие</option>
-        </select>
+             <select class="select-control" aria-label="Сортировка">
+              <option class="select-control__option" value="popular">Популярные</option>
+              <option class="select-control__option" value="cheap">Дешёвые</option>
+              <option class="select-control__option" value="expensive">Дорогие</option>
+             </select>
 
-        <button class="button sorting__button sorting__button__up" type="button">
-          <span class="visually-hidden">Вверх</span>
-        </button>
-        <button class="button sorting__button sorting__button__down" type="button">
-          <span class="visually-hidden">Вниз</span>
-        </button>
+             <button class="button sorting__button sorting__button__up" type="button">
+              <svg class="sorting__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
+                <g clip-path="url(#a)" opacity=".2"><path d="m6 0 5.5 10H.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M.5 0h11v10H.5z"/></clipPath></defs>
+              </svg>
+              <span class="visually-hidden">Вверх</span>
+             </button>
+             <button class="button sorting__button sorting__button__down" type="button">
+              <svg class="sorting__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
+                <g clip-path="url(#a)" opacity=".2"><path d="M6 10 .5 0h11"/></g><defs><clipPath id="a"><path fill="#fff" d="M11.5 10H.5V0h11z"/></clipPath></defs>
+              </svg>
+              <span class="visually-hidden">Вниз</span>
+             </button>
             </section>
 
             <div class="search-results__pagination__background">
+
               <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
 
