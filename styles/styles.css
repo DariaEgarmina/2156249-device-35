@@ -87,6 +87,21 @@ background-color: transparent;
 .logo {
   margin-bottom: 30px;
 }
+
+.logo__link:hover .logo {
+  opacity: 0.6;
+}
+
+.logo__link:active .logo {
+  opacity: 0.3;
+}
+
+.logo__link:focus .logo {
+  border: 2px solid #AF4FFF;
+}
+
+
+
 /* Навигация с личными данными - шапка */
 
 .navigation__personal {
@@ -100,7 +115,17 @@ background-color: transparent;
 
 .search__form {
   display: flex;
+
+  position: relative;
 }
+
+.search__icon {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+}
+
+/* Как сделать, чтобы иконка меняла цвет???? */
 
 .search__field {
   width: 359px;
@@ -112,15 +137,32 @@ background-color: transparent;
   border-radius: 50px 0 0 50px;
   border-right: none;
 
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
   background-color: transparent;
 }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .search__field::placeholder{
   font-size: 16px;
   line-height: 20px;
 
-  /* color: rgba(255, 255, 255, 0.3); */
-  color: #444444;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.search__field:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.search__field:disabled {
+  opacity: 0.3;
 }
 
 .search__button {
@@ -138,6 +180,23 @@ background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+
+.search__button:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.search__button:active {
+  color: #C4C4C4;
+}
+
+.search__button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.search__button:disabled {
+  opacity: 0.3;
 }
 
 /* Навигация */
@@ -257,6 +316,18 @@ background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+.navigation__link__about:hover {
+  opacity: 0.8;
+}
+
+.navigation__link__about:active {
+  opacity: 0.3;
+}
+
+.navigation__link__about:focus {
+  border: 2px solid #AF4FFF;
 }
 
 /* Основная часть */
