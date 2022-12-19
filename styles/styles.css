@@ -76,10 +76,10 @@ background-color: transparent;
 /* Шапка */
 
 .header {
-  width: 1160px;
+  width: 1040px;
   margin: 0 auto;
-  padding: 0 60px;
-  background-color: #FFE17F;
+  /* padding: 0 60px; */
+  /* background-color: #FFE17F; */
 
   box-sizing: border-box;
 }
@@ -783,6 +783,23 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* Страница каталога */
 
 /* Шапка - каталог */
+
+.header__catalog {
+  position: relative;
+
+}
+
+.header__catalog::before{
+  content: "";
+  width: 1160px;
+  height: 186px;
+  margin: 25px auto 0 auto;
+  background-color: #FFE17F;
+  z-index: -1;
+  position: absolute;
+  left: -60px;
+
+}
 
 .login__item__header {
   /* margin-right: 28px; */
