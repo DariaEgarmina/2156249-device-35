@@ -78,10 +78,6 @@ background-color: transparent;
 .header {
   width: 1040px;
   margin: 0 auto;
-  /* padding: 0 60px; */
-  /* background-color: #FFE17F; */
-
-  box-sizing: border-box;
 }
 
 .header__index::before{
@@ -95,7 +91,9 @@ background-color: transparent;
   left: 150px;
 }
 
-.logo {
+.logo__link {
+  display: block;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -110,8 +108,6 @@ background-color: transparent;
 .logo__link:focus .logo {
   border: 2px solid #AF4FFF;
 }
-
-
 
 /* Навигация с личными данными - шапка */
 
@@ -1170,7 +1166,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-bottom: 62px;
 }
 
-.footer__logo {
+.footer__logo__link {
+  width: 145px;
+  height: 36px;
+
+  display: block;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -1200,12 +1201,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 20px;
 }
 
+.footer__list__about {
+  margin-left: 116px;
+}
+
+.footer__item__about {
+  margin-right: 35px;
+}
+
 .footer__link__about {
   color: #ffffff;
 }
 
 .phone {
-  margin-left: 183px;
+  margin-left: auto;
 }
 
 .phone__link {
@@ -1213,6 +1222,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 20px;
   color: #ffffff;
   text-decoration-line: underline;
+}
+
+.phone__link:hover {
+  color: #FFC700;
+
+}
+
+.phone__link:active {
+  opacity: 0.6;
+}
+
+.phone__link:focus {
+  border: 2px solid #AF4FFF;
+
 }
 
 .footer__social__copyright__container {
@@ -1229,8 +1252,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   position: absolute;
   left: 0;
-  bottom: 10px;
-
+  bottom: 16px;
 }
 
 .social__list {
@@ -1252,8 +1274,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin-right: 0;
 }
 
+.social__link {
+  width: 40px;
+  height: 40px;
+
+  display: block;
+}
+
+.social__link__icon {
+  fill: #7c7c7c;
+}
+
 .social__link:hover .social__link__icon {
   fill: #ffc700;
+}
+
+.social__link:active .social__link__icon .social__link__pass {
+  opacity: 0.6;
+}
+
+.social__link:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.copyright {
+  margin-left: auto;
+}
+
+.copyright__link {
+  width: 115px;
+  height: 33px;
+
+  display: block;
+  margin: 0;
+}
+
+.copyright__link__icon {
+  fill: #FFC700;
+}
+
+.copyright__link:hover .copyright__link__icon {
+  fill: #ffffff;
+}
+
+.copyright__link:active .copyright__link__icon {
+  opacity: 0.6;
+}
+
+.copyright__link:focus {
+  border: 2px solid #AF4FFF;
 }
 
 /* Страница каталога */
